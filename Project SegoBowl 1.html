@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Katalog Produk</title>
+	<style>
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-image: url(https://github.com/Syahbyl/Syahbyl.github.io/raw/869dae88c14398173d8eea6d21bade57bf3e3530/luar%20angkasa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+		/* Styling untuk header */
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		
+		/* Styling untuk container */
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 20px;
+		}
+		
+		/* Styling untuk produk */
+		.produk {
+			width: 300px;
+			margin: 20px;
+			padding: 20px;
+			box-shadow: 0 4px 8px 0 rgba(253, 140, 2, 0.2);
+			border-radius: 5px;
+		}
+		
+		.produk h3 {
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.produk img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+		
+		.produk p {
+			font-size: 14px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		
+		.produk button {
+			background-color: #f5f7f7;
+			color: #000000;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.produk button:hover {
+			background-color: #bab0e8;
+			color: #f6f9fa;
+			border: 1px solid #333;
+		}
+
+		.produk h3, .produk p {
+    color: #fff;
+}
+
+	</style>
+</head>
+<body>
+<header>
+  <h1>
+    <sup>SYAHBYL</sup><sub>FARA</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEGOBOWL
+  </h1>
+</header>
+
+      
+	
+	<div class="container">
+		<div class="produk">
+      <img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/e429170b642358a792252b59a935ee947da96463/ricebowl%20ayam%20geprek.jpg" alt="Produk 1">
+			<h3>SEGOBOWL&nbsp;&nbsp;AYAM GEPREK</h3>
+			<p>SEGOBOWL AYAM GEPREK adalah menu blablabla</p>
+			<button onclick="beliProduk1()">Beli Sekarang</button>
+		</div>
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/e429170b642358a792252b59a935ee947da96463/ricebowl%20chicken%20katsu.jpg" alt="Produk 2">
+			<h3>SEGOBOWL&nbsp;&nbsp;CHICKEN KATSU</h3>
+			<p>SEGOBOWL CHICKEN KATSU adalah menu blablabla </p>
+			<button onclick="beliProduk2()">Beli Sekarang</button>
+		</div>
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/e429170b642358a792252b59a935ee947da96463/ricebowl%20chicken%20katsu.jpg" alt="Produk 3">
+			<h3>SEGOBOWL&nbsp;&nbsp;CHICKEN TERIYAKI</h3>
+			<p>SEGOBOWL CHICKEN TERIYAKI adalah menu blablabla</p>
+			<button onclick="beliProduk3()">Beli Sekarang</button>
+		</div>
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/e429170b642358a792252b59a935ee947da96463/riceowl%20udang%20sambel%20matah.jpg" alt="Produk 4">
+			<h3>SEGOBOWL&nbsp;&nbsp;UDANG SAMBEL</h3>
+			<p>SEGOBOWL UDANG SAMBEL adalah menu blablabla</p>
+			<button onclick="beliProduk4()">Beli Sekarang</button>
+		</div>
+	</div>
+	
+  <script>
+    function beliProduk1() {
+      // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+      var nomor = "62881036093497";
+      // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+      var pesan = "Saya ingin membeli SEGOBOWL AYAM GEPREK";
+      // Format pesan ke dalam URL untuk digunakan di WhatsApp
+      var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+      // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+      window.location.href = url;
+    }
+    </script>
+
+<script>
+  function beliProduk2() {
+    // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+    var nomor = "62881036093497";
+    // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+    var pesan = "Saya ingin membeli SEGOBOWL CHICKEN KATSU";
+    // Format pesan ke dalam URL untuk digunakan di WhatsApp
+    var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+    window.location.href = url;
+  }
+  </script>
+
+  <script>
+    function beliProduk3() {
+      // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+      var nomor = "62881036093497";
+      // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+      var pesan = "Saya ingin membeli SEGOBOWL CHICKEN TERIYAKI";
+      // Format pesan ke dalam URL untuk digunakan di WhatsApp
+      var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+      // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+      window.location.href = url;
+    }
+    </script>
+
+<script>
+  function beliProduk4() {
+    // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+    var nomor = "62881036093497";
+    // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+    var pesan = "Saya ingin membeli SEGOBOWL UDANG SAMBEL";
+    // Format pesan ke dalam URL untuk digunakan di WhatsApp
+    var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+    window.location.href = url;
+  }
+  </script>
