@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.tebal {
+		  font-weight: bold;
+		}
+	  </style>
+	  
+	<title>MENU SEGO BOWL</title>
+	<style>
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(https://github.com/Syahbyl/Syahbyl.github.io/raw/cdca9bb4e5d5ed7571f80054b0a50ecce10a0383/baground%20segobowl.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 50px;
+	}
+	
+	.produk {
+		width: 300px;
+		margin: 20px;
+		padding: 20px;
+		background-color: #000000c3;
+		border-radius: 10px;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.produk:hover {
+		transform: translateY(-10px);
+		box-shadow: 0px 20px 25px rgba(40, 4, 219, 0.2);
+	}
+
+	.produk h3 {
+		font-size: 25px;
+		font-weight: bold;
+		color: #ffffff;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.produk img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+	}
+	
+	.produk p {
+		font-size: 16px;
+		line-height: 1.5;
+		color: #481a1a;
+		margin-bottom: 10px;
+		text-align: justify;
+	}
+	
+	.produk button {
+		background-color: #000000;
+		color: #ffffff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		transition: background-color 0.2s ease-in-out;
+	}
+	
+	.produk button:hover {
+		background-color: #beb1b1;
+	}
+
+	.harga {
+  padding: 10px;
+  border: 4px solid #000;
+  background-color: #f1eded;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+	}
+
+</style>
+
+	<div class="container">
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/8a1525e2c82183dbb6f9ec40dd7d1ecc961c6c3a/ricebowl%20ayam%20geprek.jpg" alt="Produk 1">
+			<h3>SEGO&nbsp;&nbsp;BOWL&nbsp;&nbsp;AYAM GEPREK</h3>
+			<p>     </p>
+			<div class="harga">
+				<p class="tebal">Harga: Rp 12.000,-</p>
+			  </div> 
+			<button onclick="beliProduk1()">Beli Sekarang</button>
+		</div>
+
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/e429170b642358a792252b59a935ee947da96463/ricebowl%20chicken%20katsu.jpg" alt="Produk 2">
+			<h3>SEGO&nbsp;&nbsp;BOWL&nbsp;&nbsp;CHICKEN KATSU</h3>
+			<p>     </p>
+			<div class="harga">
+				<p class="tebal">Harga: Rp 12.000,-</p>
+			  </div> 
+			<button onclick="beliProduk2()">Beli Sekarang</button>
+		</div>
+
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/4205062e81d31d666234de6b7e23e89087d90c4d/ricebowl%20ciken%20teriyaki.jpg" alt="Produk 3">
+			<h3>SEGO&nbsp;&nbsp;BOWL&nbsp;&nbsp;CHICKEN TERIYAKI</h3>
+			<p>     </p>
+			<div class="harga">
+				<p class="tebal">Harga: Rp 12.000,-</p>
+			  </div> 
+			<button onclick="beliProduk3()">Beli Sekarang</button>
+		</div>
+
+		<div class="produk">
+			<img src="https://github.com/Syahbyl/Syahbyl.github.io/raw/4205062e81d31d666234de6b7e23e89087d90c4d/ricebowl%20udang%20sambel.jpg" alt="Produk 4">
+			<h3>SEGO&nbsp;&nbsp;BOWL&nbsp;&nbsp;UDANG SAMBEL</h3>
+			<p>     </p>
+			<div class="harga">
+				<p class="tebal">Harga: Rp 12.000,-</p>
+			  </div> 
+			<button onclick="beliProduk4()">Beli Sekarang</button>
+		</div>
+	</div>
+	
+  <script>
+    function beliProduk1() {
+      // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+      var nomor = "62881036093497";
+      // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+      var pesan = "Saya ingin membeli SEGOBOWL AYAM GEPREK";
+      // Format pesan ke dalam URL untuk digunakan di WhatsApp
+      var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+      // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+      window.location.href = url;
+    }
+    </script>
+
+<script>
+  function beliProduk2() {
+    // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+    var nomor = "62881036093497";
+    // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+    var pesan = "Saya ingin membeli SEGOBOWL CHICKEN KATSU";
+    // Format pesan ke dalam URL untuk digunakan di WhatsApp
+    var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+    window.location.href = url;
+  }
+  </script>
+
+  <script>
+    function beliProduk3() {
+      // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+      var nomor = "62881036093497";
+      // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+      var pesan = "Saya ingin membeli SEGOBOWL CHICKEN TERIYAKI";
+      // Format pesan ke dalam URL untuk digunakan di WhatsApp
+      var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+      // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+      window.location.href = url;
+    }
+    </script>
+
+<script>
+  function beliProduk4() {
+    // Ganti nomor WhatsApp dengan nomor Anda atau nomor toko Anda
+    var nomor = "62881036093497";
+    // Ganti pesan dengan pesan yang ingin Anda kirim ke customer
+    var pesan = "Saya ingin membeli SEGOBOWL UDANG SAMBEL";
+    // Format pesan ke dalam URL untuk digunakan di WhatsApp
+    var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    // Redirect ke URL WhatsApp dengan pesan yang sudah diformat
+    window.location.href = url;
+  }
+  </script>
